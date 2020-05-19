@@ -60,8 +60,9 @@ disp('Done')
 % run missionA.m;
 run missionB.m;
 
+initial = [];
 pylonCenter(3) = 0;
-wgs84 = wgs84Ellipsoid('kilometer'); %TODO verificare che esprima le coordinate nello stesso modo dell'ECEF dato in missionB.m
+wgs84 = wgs84Ellipsoid('meter'); %TODO verificare che esprima le coordinate nello stesso modo dell'ECEF dato in missionB.m
 [initial(1), initial(2), initial(3)] = geodetic2ned(initPoint(1), initPoint(2), initPoint(3), pylonCenter(1), pylonCenter(2), pylonCenter(3), wgs84, 'degrees');
 initial(4:5) = 0;
 initial(6)   = initInspectionDirection*pi/180;
