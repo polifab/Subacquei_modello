@@ -7,6 +7,9 @@ disp('Loading System parameters...')
 %% Environmental data
 
 rho = 1030;                 % [kg/m^3] Sea Water Density
+seaCurrent = [ 0.1;
+              0.05;
+                 0];        % [m/s] Sea current speed, values can be modified
 
 %% Data for thrusters [Inspired to Bluerobotics model T200]
 
@@ -31,8 +34,8 @@ V = 4/3*pi*a*b*c;
 massa = 100;
 Masse         % code for mass matrix computation
 TAM_matrice   % code for Thrust Allocation Matrix computation
-current = [0;0;0;0;0;0];
-rho = 1030
+current = [seaCurrent; 0; 0; 0];
+
 %% Environment Model & Sensor Model parameters
 % here, the Environment Model & Sensor Model parameters parameters are included
 
