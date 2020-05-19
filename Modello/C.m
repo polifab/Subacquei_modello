@@ -9,5 +9,5 @@ function F_c = C(ni, M)
     C21 = C12;
     s2 = M22*ni2;
     C22 = - [0 -s2(3) s2(2); s2(3) 0 -s2(1); -s2(2) s2(1) 0];
-    F_c = [C11 C12; C21 C22]
+    F_c = [C11 C12; C21 C22]*ni;
 end
