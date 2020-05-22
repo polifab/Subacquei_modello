@@ -67,7 +67,6 @@ wgs84 = wgs84Ellipsoid('meter'); %TODO verificare che esprima le coordinate nell
 initial(4:5) = 0;
 initial(6)   = initInspectionDirection*pi/180;
 
-
 % run missionC.m;
 
 
