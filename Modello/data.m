@@ -34,7 +34,8 @@ V = 4/3*pi*a*b*c;
 massa = 100;
 Masse         % code for mass matrix computation
 TAM_matrice   % code for Thrust Allocation Matrix computation
-current = [seaCurrent; 0; 0; 0];
+%current = [seaCurrent; 0; 0; 0];
+current = [0; 0; 0; 0; 0; 0];
 
 %% Environment Model & Sensor Model parameters
 % here, the Environment Model & Sensor Model parameters parameters are included
@@ -63,15 +64,15 @@ run missionB.m;
 initial = [];
 pylonCenter(3) = 0;
 wgs84 = wgs84Ellipsoid('meter'); %TODO verificare che esprima le coordinate nello stesso modo dell'ECEF dato in missionB.m
-[initial(1), initial(2), initial(3)] = geodetic2ned(initPoint(1), initPoint(2), initPoint(3), pylonCenter(1), pylonCenter(2), pylonCenter(3), wgs84, 'degrees');
-initial(4:5) = 0;
-initial(6)   = initInspectionDirection*pi/180;
-
+%[initial(1), initial(2), initial(3)] = geodetic2ned(initPoint(1), initPoint(2), initPoint(3), pylonCenter(1), pylonCenter(2), pylonCenter(3), wgs84, 'degrees');
+%initial(4:5) = 0;
+%initial(6)   = initInspectionDirection*pi/180;
+initial = [0;0;0;0;0;0]
 % run missionC.m;
 
 
 %% RUN
-%simout = sim('modello_simulink')
+simout = sim('modello_simulink')
 
 %eta = simout.eta;
 %eta = eta.Data;
