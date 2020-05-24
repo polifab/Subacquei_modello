@@ -34,8 +34,8 @@ V = 4/3*pi*a*b*c;
 massa = 100;
 Masse         % code for mass matrix computation
 TAM_matrice   % code for Thrust Allocation Matrix computation
-%current = [seaCurrent; 0; 0; 0];
-current = [0; 0; 0; 0; 0; 0];
+current = [seaCurrent; 0; 0; 0];
+%current = [0; 0; 0; 0; 0; 0];
 
 %% Environment Model & Sensor Model parameters
 % here, the Environment Model & Sensor Model parameters parameters are included
