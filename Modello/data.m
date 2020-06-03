@@ -72,7 +72,7 @@ initial = [0;0;0;0;0;0]
 
 
 %% RUN
-simout = sim('modello_simulink')
+%simout = sim('modello_simulink')
 
 %eta = simout.eta;
 %eta = eta.Data;
