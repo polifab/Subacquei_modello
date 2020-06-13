@@ -1,0 +1,14 @@
+function plot_data(signal, time)
+
+    figure;
+    hold on;
+    plot(time, signal(1));
+    plot(time, signal(2));
+    plot(time, signal(3));
+    plot(signal(4));
+    plot(signal(5));
+    plot(signal(6));
+    legend('x','y','z','fi','theta','psi')
+    
+    
+end
