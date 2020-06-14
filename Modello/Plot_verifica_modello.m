@@ -1,10 +1,16 @@
 %% VERIFICA BONTA' MODELLO (SIMULINK)
 
+clear all
+clc
+
+data
+
 initial = [0 0 0 0 0 0]';
-current_switch = 1;         % mettere a 1 per includere la corrente, 0 per escluderla
+current_switch = 0;         % mettere a 1 per includere la corrente, 0 per escluderla
 VEL_THRUSTER = [0 0 0 0 0 0 0]; % velocità desiderata in ingresso ai 7 thruster
 TAU = [0 0 0 0 0 0]';
 
+%%
 simout = sim('modello_simulink')
 
 plot_eta_ned(simout.eta_ned)
