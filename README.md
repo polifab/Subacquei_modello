@@ -1,5 +1,3 @@
-# Subacquei_modello
+# Repository with Matlab/Simulink kinematic and dynamic model of an Autonoumous Underwater Vehicle
 
-To clone the repo with SSH:
-
-git clone git@github.com:polifab/Subacquei_modello.git
+Further details in the report [Modello_del_veicolo.pdf](https://github.com/polifab/Subacquei_modello/files/15308218/Modello_del_veicolo.pdf)
